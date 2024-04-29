@@ -1,0 +1,53 @@
+#root {
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid;
+}
+
+.users-list,
+.user-info {
+  height: 60vh;
+}
+
+.users-list div,
+.user-info div {
+  padding: 1vw;
+  font-size: 2rem;
+  text-align: left;
+}
+
+.users-list {
+  width: 35vw;
+  overflow: auto;
+}
+
+.users-list div {
+  border-bottom: 1px solid;
+}
+
+.user-info {
+  width: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: width 0.3s ease, opacity 0.3s ease;
+}
+
+.user-info.visible {
+  width: 55vw;
+  opacity: 1;
+}
